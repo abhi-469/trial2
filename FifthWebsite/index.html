@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Fifth Website
+		</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="hero">
+			<div class="form-box">
+				<div class="button-box">
+					<button type="button" id="btn1"  class="toggle-button" onclick="login()">Log In</button>
+					<button type="button" id="btn2"  class="toggle-button" onclick="register()">Register</button>
+				</div>
+				<form id="login" class="input-group">
+					<input type="text" class="input-field" placeholder="User Id" required>
+					<input type="text" class="input-field" placeholder="Enter password" required>
+					<input type="checkbox" class="check-box">Forgot Password<span></span>
+					<input type="checkbox" class="check-box">Change Password<span></span>
+					<button type="submit" class="submit-form">Login</button>
+				</form>
+				<form id="register" class="input-group">
+					<input type="text" class="input-field" placeholder="User Id" required>
+					<input type="text" class="input-field" placeholder="Enter Email" required>
+					<input type="text" class="input-field" placeholder="Enter password" required>
+					<input type="checkbox" class="check-box"><span>I agree to term and condition</span>
+					<button type="submit" class="submit-form">Register</button>
+				</form>
+			</div>
+		</div>
+	<script>
+		var x= document.getElementById("login");
+		var y= document.getElementById("register");
+		
+		function register(){
+				
+				x.style.left="350px";
+				y.style.bottom="400px";
+				
+		}
+		function login(){
+				x.style.left="0px";
+				y.style.top="0px";
+				
+		}
+	
+	</script>	
+	</body>
+</html>
